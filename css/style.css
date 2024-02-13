@@ -1,0 +1,55 @@
+/* =============== ROOT CSS CODE =============== */
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* =============== HEADER CSS CODE =============== */
+header {
+  width: auto;
+  padding: 0px 60px;
+  height: auto;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9ff;
+}
+header .logo {
+  height: auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+header .logo img {
+  width: 80px;
+  height: auto;
+}
+header .logo .heading {
+  color: #e8b6ff;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+header nav ul li {
+  list-style: none;
+  border: 1px solid #000000;
+  padding: 12px 20px;
+  border-radius: 12px;
+}
+header nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #000000;
+}
