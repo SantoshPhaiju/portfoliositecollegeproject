@@ -20,3 +20,13 @@ A brief description of what this project is it is specially made for the college
 
 ![santoshphaiju](https://github.com/SantoshPhaiju/portfoliositecollegeproject/assets/92672422/46044853-4946-4c4a-af08-b8edd28d6a27)
 
+# Day 1: 
+
+* Done project setup and added to the github.
+* Created Navbar and all the required pages.
+* Setting up the color scheme required for the project and the font family.
+
+# Day 2: 
+
+* Created and formatted the readme file.
+* Added all the image required for the project
