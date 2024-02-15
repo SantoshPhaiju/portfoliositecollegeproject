@@ -30,3 +30,8 @@ A brief description of what this project is it is specially made for the college
 
 * Created and formatted the readme file.
 * Added all the image required for the project
+* Worked on Hero section
+
+# Day 3: 
+
+* Completed Hero Section 
