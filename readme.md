@@ -29,9 +29,10 @@ A brief description of what this project is it is specially made for the college
 # Day 2: 
 
 * Created and formatted the readme file.
-* Added all the image required for the project
-* Worked on Hero section
+* Added all the image required for the project.
+* Worked on Hero section.
 
 # Day 3: 
 
-* Completed Hero Section 
+* Completed Hero Section.
+* Separated all the scss files.
