@@ -1,0 +1,11 @@
+@mixin btn($borderRadius) {
+  background: $button-gradient;
+  padding: 12px 32px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-family: $primary-font;
+  font-weight: 400;
+  border-radius: $borderRadius;
+  cursor: pointer;
+}

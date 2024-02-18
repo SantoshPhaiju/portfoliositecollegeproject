@@ -1,0 +1,54 @@
+/* =============== HEADER CSS CODE =============== */
+header {
+  width: auto;
+  padding: 0px 60px;
+  height: auto;
+  font-family: $primary-font;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $primary-color;
+
+  .logo {
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    img {
+      width: 80px;
+      height: auto;
+    }
+
+    .heading {
+      color: #e8b6ff;
+      font-size: 32px;
+      font-weight: 400;
+      font-family: $primary-font;
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+
+      li {
+        list-style: none;
+        border: 1px solid $header-color;
+        padding: 12px 20px;
+        border-radius: 12px;
+
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 18px;
+          color: $header-color;
+        }
+      }
+    }
+  }
+}
