@@ -45,6 +45,7 @@
   .right {
     width: 45%;
     height: 100%;
+    margin-top: -30px;
 
     .bioInfo {
       color: $secondary-color;
@@ -55,10 +56,9 @@
 
     .bio-data-skills {
       margin-top: 20px;
-      padding-bottom: 50px;
       display: flex;
       flex-direction: column;
-      gap: 26px;
+      gap: 20px;
 
       .bio-skill {
         h3 {
@@ -163,6 +163,17 @@
           }
         }
       }
+    }
+
+    .downloadCv {
+      @include btn(0px);
+      margin-top: 48px;
+    }
+
+    .downloadCv:hover {
+      box-shadow: 4px 8px 8px 0px rgba(140, 134, 255, 0.4);
+      scale: 110%;
+      border-radius: 4px;
     }
   }
 }
