@@ -1,0 +1,168 @@
+// * BIO DATA CSS CODE HERE...
+
+@mixin progress-span($val) {
+  left: calc($val - 1.8rem);
+}
+
+.bioData {
+  padding: $section-padding;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 14px;
+
+  .left {
+    width: 45%;
+    height: auto;
+
+    .image {
+      width: 100%;
+      height: auto;
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+
+      img {
+        height: auto;
+        width: 90%;
+        z-index: 2;
+        margin-left: 40px;
+      }
+
+      div {
+        position: absolute;
+        top: -30px;
+        left: 10px;
+        background: #b24fff;
+        height: 100%;
+        width: 90%;
+        z-index: 1;
+      }
+    }
+  }
+
+  .right {
+    width: 45%;
+    height: 100%;
+
+    .bioInfo {
+      color: $secondary-color;
+      text-align: justify;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+    .bio-data-skills {
+      margin-top: 20px;
+      padding-bottom: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+
+      .bio-skill {
+        h3 {
+          font-size: 16px;
+          font-weight: 700;
+          font-family: $primary-font;
+          color: #000;
+          line-height: 4px;
+        }
+
+        .bio-progress-bar {
+          background-color: #fff3f3;
+          border-radius: 50px;
+          width: 100%;
+          height: 0.5rem;
+          position: relative;
+
+          span {
+            position: absolute;
+            top: 1.3rem;
+            height: 1.6rem;
+            width: 3.4rem;
+            color: white;
+            background: $linear-gradient-color;
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            outline: none;
+          }
+
+          span::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: 0.8rem solid white;
+            border-color: transparent;
+            border-bottom-color: #e8b6ff;
+            top: -1.4rem;
+          }
+        }
+
+        .bio-progress-bar::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          height: inherit;
+          border-radius: 50px;
+          background: $linear-gradient-color;
+        }
+
+        .bio-progress-bar-1::before {
+          width: 35%;
+        }
+
+        .bio-progress-bar-1 {
+          span {
+            @include progress-span(35%);
+          }
+        }
+
+        .bio-progress-bar-2::before {
+          width: 90%;
+        }
+
+        .bio-progress-bar-2 {
+          span {
+            @include progress-span(90%);
+          }
+        }
+        .bio-progress-bar-3::before {
+          width: 85%;
+        }
+
+        .bio-progress-bar-3 {
+          span {
+            @include progress-span(85%);
+          }
+        }
+
+        .bio-progress-bar-4::before {
+          width: 70%;
+        }
+
+        .bio-progress-bar-4 {
+          span {
+            @include progress-span(70%);
+          }
+        }
+
+        .bio-progress-bar-5::before {
+          width: 78%;
+        }
+
+        .bio-progress-bar-5 {
+          span {
+            @include progress-span(78%);
+          }
+        }
+      }
+    }
+  }
+}

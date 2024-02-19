@@ -1,12 +1,11 @@
-
 @import "button";
 
 .hero {
   // border: 1px solid black;
   width: auto;
-  padding: 60px 140px;
   background-color: $primary-color;
   display: flex;
+  padding: $section-padding;
   justify-content: space-between;
   align-items: center;
   gap: 14px;
@@ -35,8 +34,14 @@
     }
 
     .hireMeBtn {
-        @include btn(0px);
-        margin-top: 32px;
+      @include btn(0px);
+      margin-top: 32px;
+    }
+
+    .hireMeBtn:hover {
+      box-shadow: 4px 8px 8px 0px rgba(140, 134, 255, 0.4);
+      scale: 110%;
+      border-radius: 4px;
     }
   }
 

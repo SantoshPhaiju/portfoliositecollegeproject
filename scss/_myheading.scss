@@ -1,0 +1,29 @@
+.commonHeading {
+  font-weight: 600;
+  font-size: 38px;
+  font-family: $primary-font;
+  color: black;
+  position: relative;
+}
+
+.commonHeading::before {
+  content: "";
+  position: absolute;
+  top: 110%;
+  left: 0px;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #d06dff;
+}
+
+.commonHeading::after {
+  content: "";
+  position: absolute;
+  top: 123%;
+  left: 0.1rem;
+  height: 0.3rem;
+  width: 12rem;
+  border-radius: 10px;
+  background-color: #d06dff;
+}
