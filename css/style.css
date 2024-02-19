@@ -299,3 +299,51 @@ header nav ul li:hover a {
   border-radius: 10px;
   background-color: #d06dff;
 }
+
+.portfolio {
+  padding: 60px 140px;
+  background-color: #f9f9ff;
+}
+.portfolio p {
+  color: #777777;
+  width: 55%;
+  font-size: 16px;
+  margin-top: 50px;
+}
+.portfolio .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin: 60px auto;
+}
+.portfolio .buttons button {
+  background: linear-gradient(to left, #C5BCFF, #bd7cff);
+  padding: 12px 32px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.portfolio .buttons #btn1 {
+  box-shadow: 0px 8px 14px 4px rgba(140, 134, 255, 0.4);
+  transform: translateY(-8px);
+}
+.portfolio .images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 18px;
+  width: 100%;
+}
+.portfolio .images .image {
+  width: auto;
+}
+.portfolio .images .image img {
+  width: 100%;
+  height: 100%;
+}
