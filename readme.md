@@ -36,3 +36,7 @@ A brief description of what this project is it is specially made for the college
 
 * Completed Hero Section.
 * Separated all the scss files.
+
+# Day 4: 
+
+* Completed Bio Data Section.
