@@ -95,7 +95,7 @@ header nav ul li:hover a {
   color: #777777;
 }
 .hero .left .hireMeBtn {
-  background: linear-gradient(to left, #C5BCFF, #bd7cff);
+  background: linear-gradient(to left, #c5bcff, #bd7cff);
   padding: 12px 32px;
   border: none;
   color: white;
@@ -251,7 +251,7 @@ header nav ul li:hover a {
   left: calc(78% - 1.8rem);
 }
 .bioData .right .downloadCv {
-  background: linear-gradient(to left, #C5BCFF, #bd7cff);
+  background: linear-gradient(to left, #c5bcff, #bd7cff);
   padding: 12px 32px;
   border: none;
   color: white;
@@ -318,7 +318,7 @@ header nav ul li:hover a {
   margin: 60px auto;
 }
 .portfolio .buttons button {
-  background: linear-gradient(to left, #C5BCFF, #bd7cff);
+  background: linear-gradient(to left, #c5bcff, #bd7cff);
   padding: 12px 32px;
   border: none;
   color: white;
@@ -346,4 +346,29 @@ header nav ul li:hover a {
 .portfolio .images .image img {
   width: 100%;
   height: 100%;
+}
+
+.section-work-data {
+  padding: 60px 140px;
+  background: linear-gradient(to bottom, #DC91FF, #C447FF);
+}
+.section-work-data .numbers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  gap: 18px;
+  color: white;
+}
+.section-work-data .numbers .numberDiv {
+  text-align: center;
+  padding: 40px 0px;
+}
+.section-work-data .numbers .numberDiv h2 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 0px;
+}
+.section-work-data .numbers .numberDiv p {
+  font-size: 20px;
+  font-weight: 400;
 }
