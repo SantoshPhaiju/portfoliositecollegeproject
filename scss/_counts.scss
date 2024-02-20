@@ -1,0 +1,28 @@
+.section-work-data {
+  padding: $section-padding;
+  background: $bg-gradient;
+
+  .numbers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 18px;
+    color: white;
+
+    .numberDiv {
+      text-align: center;
+      padding: 40px 0px;
+
+      h2 {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 0px;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+  }
+}
