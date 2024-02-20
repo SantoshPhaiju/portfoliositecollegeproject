@@ -1,0 +1,51 @@
+.section-services {
+  padding: $section-padding;
+
+  .service-container {
+    .services-text {
+      p {
+        color: $secondary-color;
+        width: 55%;
+        font-size: 16px;
+        margin-top: 50px;
+      }
+    }
+
+    .servicesDiv {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+
+      .service-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        padding: 40px 12px;
+        box-shadow: 2px 4px 8px 0px rgba(67, 5, 90, 0.3);
+        border-radius: 8px;
+
+        img {
+          height: 45px;
+          width: 45px;
+          background-color: #d1b8b8;
+          border-radius: 50px;
+        }
+
+        h3 {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 0px;
+        }
+
+        p {
+          line-height: 20px;
+          text-align: center;
+          font-size: 16px;
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
