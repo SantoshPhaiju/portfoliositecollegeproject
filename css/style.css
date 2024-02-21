@@ -503,3 +503,58 @@ header nav ul li:hover a {
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+.section-freelancing {
+  padding: 60px 140px;
+  background: url("../images/bgparallaz.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  transition: all 0.7s linear;
+  text-align: center;
+  position: relative;
+}
+.section-freelancing .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #3964ff;
+  opacity: 0.7;
+  transform: translateY(0%);
+}
+.section-freelancing .container {
+  position: relative;
+}
+.section-freelancing .container h2 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 0px;
+  font-family: "Inria Sans", sans-serif;
+  color: white;
+}
+.section-freelancing .container h2 span {
+  color: #a0f669;
+}
+.section-freelancing .container p {
+  margin-bottom: 50px;
+  color: white;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+.section-freelancing .container a {
+  background: linear-gradient(to left, #c5bcff, #bd7cff);
+  padding: 12px 32px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 20px;
+}
