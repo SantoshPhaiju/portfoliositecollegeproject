@@ -558,3 +558,11 @@ header nav ul li:hover a {
   text-decoration: none;
   margin-top: 20px;
 }
+
+.section-contact-us {
+  padding: 60px 140px;
+}
+.section-contact-us .map {
+  width: 100%;
+  margin-top: 60px;
+}
