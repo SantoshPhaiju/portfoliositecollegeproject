@@ -616,3 +616,60 @@ header nav ul li:hover a {
   font-family: "Inter", sans-serif;
   font-size: 20px;
 }
+
+.footer {
+  padding: 60px 140px;
+  background: #000939;
+  color: white;
+}
+.footer .grid-four-column {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.footer .grid-four-column .f-about p {
+  color: #959595;
+}
+.footer .grid-four-column .f-links ul {
+  padding: 0px;
+}
+.footer .grid-four-column .f-links ul li {
+  list-style: none;
+  align-self: flex-start;
+}
+.footer .grid-four-column .f-links ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+}
+.footer .grid-four-column .f-links ul li::before {
+  content: "->";
+}
+.footer .grid-four-column .f-services ul {
+  padding: 0px;
+}
+.footer .grid-four-column .f-services ul li {
+  list-style: none;
+  align-self: flex-start;
+}
+.footer .grid-four-column .f-services ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+}
+.footer .grid-four-column .f-services ul li::before {
+  content: "->";
+}
+.footer .grid-four-column .f-address address div p span a {
+  text-decoration: none;
+  color: white;
+  font-style: italic;
+}
+.footer .f-rights {
+  margin: 0px auto;
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

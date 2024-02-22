@@ -1,0 +1,83 @@
+.footer {
+  padding: $section-padding;
+  background: #000939;
+  color: white;
+
+  .grid-four-column {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+
+    .f-about {
+      p {
+        color: #959595;
+      }
+    }
+
+    .f-links {
+      ul {
+        padding: 0px;
+
+        li {
+          list-style: none;
+          align-self: flex-start;
+
+          a {
+            text-decoration: none;
+            color: white;
+            text-transform: capitalize;
+          }
+        }
+
+        li::before {
+          content: "->";
+        }
+      }
+    }
+
+    .f-services {
+      ul {
+        padding: 0px;
+
+        li {
+          list-style: none;
+          align-self: flex-start;
+
+          a {
+            text-decoration: none;
+            color: white;
+            text-transform: capitalize;
+          }
+        }
+
+        li::before {
+          content: "->";
+        }
+      }
+    }
+
+    .f-address {
+      address {
+        div {
+          p {
+            span {
+              a {
+                text-decoration: none;
+                color: white;
+                font-style: italic;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .f-rights {
+    margin: 0px auto;
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
