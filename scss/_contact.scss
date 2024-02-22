@@ -5,4 +5,51 @@
     width: 100%;
     margin-top: 60px;
   }
+
+  form {
+    // border: 2px solid black;
+    margin-top: 20px;
+    padding: 40px 80px;
+    width: 70%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-family: $secondary-font;
+
+    .form-two-column {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .formGroup {
+      // border: 1px solid blue;
+      width: 100%;
+      display: flex;
+
+      input,
+      textarea {
+        padding: 0.8rem 2rem;
+        border: 0.1rem solid #d9d9d9;
+        border-radius: 5px;
+        font-size: 1rem;
+        width: 100%;
+        color: #01186e;
+      }
+
+      input:focus,
+      textarea:focus {
+        outline: 0.1rem solid #760dff;
+      }
+    }
+    button {
+      @include btn(8px);
+      width: auto;
+      text-transform: uppercase;
+      font: 800;
+      font-family: $primary-font;
+      font-size: 20px;
+    }
+  }
 }
