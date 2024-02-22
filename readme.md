@@ -60,3 +60,8 @@ A brief description of what this project is it is specially made for the college
 # Day 9: 
 
 * Completed contact us section.
+
+# Day 10: 
+
+* Completed footer section.
+  
