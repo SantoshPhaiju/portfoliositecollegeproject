@@ -56,3 +56,7 @@ A brief description of what this project is it is specially made for the college
 # Day 8: 
 
 * Completed freelancing section.
+
+# Day 9: 
+
+* Completed contact us section.
