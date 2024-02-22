@@ -16,10 +16,6 @@ A brief description of what this project is it is specially made for the college
 ![Screenshot 2024-02-14 at 19 19 21](https://github.com/SantoshPhaiju/portfoliositecollegeproject/assets/92672422/abd08d13-50ac-484f-8579-85bde531e55b)
 ![Screenshot 2024-02-14 at 19 19 35](https://github.com/SantoshPhaiju/portfoliositecollegeproject/assets/92672422/591e8458-14a7-456d-9f67-dc0b2e18faa8)
 
-# Contributors
-
-![santoshphaiju](https://github.com/SantoshPhaiju/portfoliositecollegeproject/assets/92672422/46044853-4946-4c4a-af08-b8edd28d6a27)
-
 # Day 1: 
 
 * Done project setup and added to the github.
