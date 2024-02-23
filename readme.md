@@ -37,7 +37,7 @@ A brief description of what this project is it is specially made for the college
 
 * Completed Bio Data Section.
 
-* # Day 5: 
+# Day 5: 
 
 * Completed Latest Works Section.
 
