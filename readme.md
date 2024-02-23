@@ -60,4 +60,9 @@ A brief description of what this project is it is specially made for the college
 # Day 10: 
 
 * Completed footer section.
-  
+
+# Day 11:
+
+* Started working on responsive design.
+
+
