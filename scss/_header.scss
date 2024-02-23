@@ -16,6 +16,10 @@ header {
     align-items: center;
     gap: 12px;
 
+    @include xl {
+      gap: 8px;
+    }
+
     img {
       width: 80px;
       height: auto;
@@ -26,6 +30,10 @@ header {
       font-size: 32px;
       font-weight: 400;
       font-family: $primary-font;
+
+      @include xl {
+        font-size: 28px;
+      }
     }
   }
 
@@ -36,6 +44,10 @@ header {
       align-items: center;
       gap: 32px;
 
+      @include xl {
+        gap: 12px;
+      }
+
       li {
         list-style: none;
         border: 1px solid rgb(5, 30, 81);
@@ -43,6 +55,10 @@ header {
         border-radius: 8px;
         transition: all 0.3s ease-in-out;
         cursor: pointer;
+
+        @include xl {
+          padding: 6px 12px;
+        }
 
         a {
           text-decoration: none;
