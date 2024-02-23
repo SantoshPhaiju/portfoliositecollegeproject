@@ -74,10 +74,29 @@
   }
   .f-rights {
     margin: 0px auto;
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-bottom: -20px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .container {
+    .f-social-icons {
+      margin-top: 30px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+
+      a {
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
   }
 }
