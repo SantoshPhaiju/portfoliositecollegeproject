@@ -7,16 +7,56 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.section {
+  padding: 60px 140px;
+}
+@media (max-width: 1200px) {
+  .section {
+    padding: 50px 100px;
+  }
+}
+@media (max-width: 960px) {
+  .section {
+    padding: 40px 60px;
+  }
+}
+@media (max-width: 720px) {
+  .section {
+    padding: 40px 40px;
+  }
+}
+@media (max-width: 480px) {
+  .section {
+    padding: 30px 20px;
+  }
+}
+@media (max-width: 0px) {
+  .section {
+    padding: 20px 10px;
+  }
+}
+
 /* =============== HEADER CSS CODE =============== */
 header {
   width: auto;
-  padding: 0px 60px;
+  padding: 12px 60px;
   height: auto;
   font-family: "Inter", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #f9f9ff;
+  box-sizing: border-box;
+}
+@media (max-width: 1200px) {
+  header {
+    padding: 8px 55px;
+  }
+}
+@media (max-width: 960px) {
+  header {
+    padding: 8px 40px;
+  }
 }
 header .logo {
   height: auto;
@@ -42,7 +82,15 @@ header .logo .heading {
 }
 @media (max-width: 1200px) {
   header .logo .heading {
-    font-size: 28px;
+    font-size: 26px;
+  }
+}
+header nav {
+  display: block;
+}
+@media (max-width: 960px) {
+  header nav {
+    display: none;
   }
 }
 header nav ul {
@@ -85,19 +133,49 @@ header nav ul li:hover {
 header nav ul li:hover a {
   color: white;
 }
+header .hamburgerMenu {
+  display: none;
+}
+@media (max-width: 960px) {
+  header .hamburgerMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+  }
+}
+header .hamburgerMenu div {
+  height: 2px;
+  width: 30px;
+  background: black;
+}
 
 .hero {
   width: auto;
   background-color: #f9f9ff;
-  display: flex;
-  padding: 60px 140px;
-  justify-content: space-between;
-  align-items: center;
-  gap: 14px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+@media (max-width: 720px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
 }
 .hero .left {
   height: auto;
-  width: 44%;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (max-width: 720px) {
+  .hero .left {
+    order: 2;
+  }
 }
 .hero .left .smallIntro {
   font-size: 14px;
@@ -109,6 +187,21 @@ header nav ul li:hover a {
   font-weight: 700;
   letter-spacing: 0px;
   line-height: 48px;
+}
+@media (max-width: 960px) {
+  .hero .left .introName {
+    font-size: 32px;
+  }
+}
+@media (max-width: 720px) {
+  .hero .left .introName {
+    font-size: 28px;
+  }
+}
+@media (max-width: 480px) {
+  .hero .left .introName {
+    font-size: 24px;
+  }
 }
 .hero .left .shortBio {
   font-size: 14px;
@@ -128,6 +221,12 @@ header nav ul li:hover a {
   cursor: pointer;
   margin-top: 32px;
 }
+@media (max-width: 720px) {
+  .hero .left .hireMeBtn {
+    padding: 10px 26px;
+    font-size: 14px;
+  }
+}
 .hero .left .hireMeBtn:hover {
   box-shadow: 4px 8px 8px 0px rgba(140, 134, 255, 0.4);
   scale: 110%;
@@ -135,34 +234,64 @@ header nav ul li:hover a {
 }
 .hero .right {
   height: auto;
-  width: 44%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 720px) {
+  .hero .right {
+    order: 1;
+  }
 }
 .hero .right img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .bioData {
-  padding: 60px 140px;
   background: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  gap: 14px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+@media (max-width: 960px) {
+  .bioData {
+    grid-template-columns: 1fr;
+  }
 }
 .bioData .left {
-  width: 45%;
+  width: 100%;
   height: auto;
+  padding: 40px 0px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 12px;
+}
+@media (max-width: 960px) {
+  .bioData .left {
+    order: 2;
+  }
 }
 .bioData .left .image {
   width: 100%;
-  height: auto;
   position: relative;
   display: flex;
   justify-content: flex-start;
 }
+@media (max-width: 960px) {
+  .bioData .left .image {
+    width: 80%;
+    margin: 0px auto;
+  }
+}
+@media (max-width: 720px) {
+  .bioData .left .image {
+    width: 90%;
+  }
+}
 .bioData .left .image img {
-  height: auto;
   width: 90%;
   z-index: 2;
   margin-left: 40px;
@@ -177,9 +306,17 @@ header nav ul li:hover a {
   z-index: 1;
 }
 .bioData .right {
-  width: 45%;
+  width: 100%;
   height: 100%;
-  margin-top: -30px;
+  margin-top: -10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 960px) {
+  .bioData .right {
+    order: 1;
+  }
 }
 .bioData .right .bioInfo {
   color: #777777;
@@ -284,6 +421,12 @@ header nav ul li:hover a {
   cursor: pointer;
   margin-top: 48px;
 }
+@media (max-width: 720px) {
+  .bioData .right .downloadCv {
+    padding: 10px 26px;
+    font-size: 14px;
+  }
+}
 .bioData .right .downloadCv:hover {
   box-shadow: 4px 8px 8px 0px rgba(140, 134, 255, 0.4);
   scale: 110%;
@@ -297,7 +440,11 @@ header nav ul li:hover a {
   color: black;
   position: relative;
 }
-
+@media (max-width: 720px) {
+  .commonHeading {
+    font-size: 32px;
+  }
+}
 .commonHeading::before {
   content: "";
   position: absolute;
@@ -308,7 +455,6 @@ header nav ul li:hover a {
   border-radius: 50%;
   background-color: #d06dff;
 }
-
 .commonHeading::after {
   content: "";
   position: absolute;
@@ -319,9 +465,14 @@ header nav ul li:hover a {
   border-radius: 10px;
   background-color: #d06dff;
 }
+@media (max-width: 720px) {
+  .commonHeading::after {
+    width: 10rem;
+    top: 126%;
+  }
+}
 
 .portfolio {
-  padding: 60px 140px;
   background-color: #f9f9ff;
 }
 .portfolio p {
@@ -330,12 +481,22 @@ header nav ul li:hover a {
   font-size: 16px;
   margin-top: 50px;
 }
+@media (max-width: 720px) {
+  .portfolio p {
+    width: 90%;
+  }
+}
 .portfolio .buttons {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 18px;
   margin: 60px auto;
+}
+@media (max-width: 720px) {
+  .portfolio .buttons {
+    gap: 12px;
+  }
 }
 .portfolio .buttons button {
   background: linear-gradient(to left, #c5bcff, #bd7cff);
@@ -350,15 +511,31 @@ header nav ul li:hover a {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
+@media (max-width: 720px) {
+  .portfolio .buttons button {
+    padding: 10px 26px;
+    font-size: 14px;
+  }
+}
 .portfolio .buttons #btn1 {
   box-shadow: 0px 8px 14px 4px rgba(140, 134, 255, 0.4);
   transform: translateY(-8px);
 }
 .portfolio .images {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 18px;
   width: 100%;
+}
+@media (max-width: 720px) {
+  .portfolio .images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .portfolio .images {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .portfolio .images .image {
   width: auto;
@@ -369,7 +546,6 @@ header nav ul li:hover a {
 }
 
 .section-work-data {
-  padding: 60px 140px;
   background: linear-gradient(to bottom, #DC91FF, #C447FF);
 }
 .section-work-data .numbers {
@@ -378,6 +554,12 @@ header nav ul li:hover a {
   justify-content: center;
   gap: 18px;
   color: white;
+}
+@media (max-width: 720px) {
+  .section-work-data .numbers {
+    gap: 12px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .section-work-data .numbers .numberDiv {
   text-align: center;
@@ -388,24 +570,46 @@ header nav ul li:hover a {
   font-size: 28px;
   line-height: 0px;
 }
+@media (max-width: 720px) {
+  .section-work-data .numbers .numberDiv h2 {
+    font-size: 24px;
+  }
+}
 .section-work-data .numbers .numberDiv p {
   font-size: 20px;
   font-weight: 400;
 }
-
-.section-services {
-  padding: 60px 140px;
+@media (max-width: 720px) {
+  .section-work-data .numbers .numberDiv p {
+    font-size: 18px;
+  }
 }
+
 .section-services .service-container .services-text p {
   color: #777777;
   width: 55%;
   font-size: 16px;
   margin-top: 50px;
 }
+@media (max-width: 720px) {
+  .section-services .service-container .services-text p {
+    width: 90%;
+  }
+}
 .section-services .service-container .servicesDiv {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+@media (max-width: 720px) {
+  .section-services .service-container .servicesDiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .section-services .service-container .servicesDiv {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .section-services .service-container .servicesDiv .service-item {
   display: flex;
@@ -416,6 +620,11 @@ header nav ul li:hover a {
   padding: 40px 12px;
   box-shadow: 2px 4px 8px 0px rgba(67, 5, 90, 0.3);
   border-radius: 8px;
+}
+@media (max-width: 720px) {
+  .section-services .service-container .servicesDiv .service-item {
+    padding: 20px 12px;
+  }
 }
 .section-services .service-container .servicesDiv .service-item img {
   height: 45px;
@@ -428,25 +637,34 @@ header nav ul li:hover a {
   font-weight: 500;
   line-height: 0px;
 }
+@media (max-width: 480px) {
+  .section-services .service-container .servicesDiv .service-item h3 {
+    font-size: 18px;
+  }
+}
 .section-services .service-container .servicesDiv .service-item p {
   line-height: 20px;
   text-align: center;
   font-size: 16px;
   color: #777777;
 }
+@media (max-width: 480px) {
+  .section-services .service-container .servicesDiv .service-item p {
+    font-size: 14px;
+  }
+}
 
 .testimonial {
-  padding: 60px 140px;
   background-color: #f9f9ff;
 }
 .testimonial .swiper {
   width: 100%;
   height: 100%;
-  margin-top: 6cqh;
+  margin-top: 6em;
 }
 
 .swiper-slide {
-  padding: 0px 0px;
+  padding: 40px 0px;
 }
 .swiper-slide .mainContainer {
   border-radius: 12px;
@@ -525,7 +743,6 @@ header nav ul li:hover a {
 }
 
 .section-freelancing {
-  padding: 60px 140px;
   background: url("../images/bgparallaz.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -554,6 +771,11 @@ header nav ul li:hover a {
   font-family: "Inria Sans", sans-serif;
   color: white;
 }
+@media (max-width: 960px) {
+  .section-freelancing .container h2 {
+    font-size: 32px;
+  }
+}
 .section-freelancing .container h2 span {
   color: #a0f669;
 }
@@ -562,6 +784,11 @@ header nav ul li:hover a {
   color: white;
   font-size: 16px;
   font-family: "Inter", sans-serif;
+}
+@media (max-width: 960px) {
+  .section-freelancing .container p {
+    font-size: 14px;
+  }
 }
 .section-freelancing .container a {
   background: linear-gradient(to left, #c5bcff, #bd7cff);
@@ -578,10 +805,13 @@ header nav ul li:hover a {
   text-decoration: none;
   margin-top: 20px;
 }
-
-.section-contact-us {
-  padding: 60px 140px;
+@media (max-width: 720px) {
+  .section-freelancing .container a {
+    padding: 10px 26px;
+    font-size: 14px;
+  }
 }
+
 .section-contact-us .map {
   width: 100%;
   margin-top: 60px;
@@ -636,9 +866,14 @@ header nav ul li:hover a {
   font-family: "Inter", sans-serif;
   font-size: 20px;
 }
+@media (max-width: 720px) {
+  .section-contact-us form button {
+    padding: 10px 26px;
+    font-size: 14px;
+  }
+}
 
 .footer {
-  padding: 60px 140px;
   background: #000939;
   color: white;
 }

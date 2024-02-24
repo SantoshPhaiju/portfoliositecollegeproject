@@ -1,13 +1,23 @@
 /* =============== HEADER CSS CODE =============== */
 header {
   width: auto;
-  padding: 0px 60px;
+  padding: 12px 60px;
   height: auto;
   font-family: $primary-font;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: $primary-color;
+  // border: 1px solid blue;
+  box-sizing: border-box;
+
+  @include xl {
+    padding: 8px 55px;
+  }
+
+  @include lg {
+    padding: 8px 40px;
+  }
 
   .logo {
     height: auto;
@@ -32,12 +42,18 @@ header {
       font-family: $primary-font;
 
       @include xl {
-        font-size: 28px;
+        font-size: 26px;
       }
     }
   }
 
   nav {
+    display: block;
+
+    @include lg {
+      display: none;
+    }
+
     ul {
       display: flex;
       justify-content: center;
@@ -79,6 +95,26 @@ header {
           color: white;
         }
       }
+    }
+  }
+
+  .hamburgerMenu {
+    display: none;
+
+    @include lg {
+      // border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+    }
+
+    div {
+      height: 2px;
+      width: 30px;
+      background: black;
     }
   }
 }

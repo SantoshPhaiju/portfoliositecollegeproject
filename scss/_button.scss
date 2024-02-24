@@ -10,4 +10,9 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+
+  @include md {
+    padding: 10px 26px;
+    font-size: 14px;
+  }
 }
