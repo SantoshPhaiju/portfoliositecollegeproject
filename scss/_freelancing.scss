@@ -1,5 +1,4 @@
 .section-freelancing {
-  padding: $section-padding;
   background: url("../images/bgparallaz.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -29,6 +28,10 @@
       font-family: $secondary-font;
       color: white;
 
+      @include lg {
+        font-size: 32px;
+      }
+
       span {
         color: #a0f669;
       }
@@ -38,6 +41,10 @@
       color: white;
       font-size: 16px;
       font-family: $primary-font;
+
+      @include lg {
+        font-size: 14px;
+      }
     }
 
     a {

@@ -1,0 +1,23 @@
+.section {
+  padding: $section-padding;
+
+  @include xl {
+    padding: 50px 100px;
+  }
+
+  @include lg {
+    padding: 40px 60px;
+  }
+
+  @include md {
+    padding: 40px 40px;
+  }
+
+  @include sm {
+    padding: 30px 20px;
+  }
+
+  @include xs {
+    padding: 20px 10px;
+  }
+}

@@ -1,5 +1,4 @@
 .portfolio {
-  padding: $section-padding;
   background-color: #f9f9ff;
 
   p {
@@ -7,6 +6,10 @@
     width: 55%;
     font-size: 16px;
     margin-top: 50px;
+
+    @include md {
+      width: 90%;
+    }
   }
 
   .buttons {
@@ -15,6 +18,10 @@
     align-items: center;
     gap: 18px;
     margin: 60px auto;
+
+    @include md {
+      gap: 12px;
+    }
 
     button {
       @include btn(0px);
@@ -28,9 +35,17 @@
 
   .images {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 18px;
     width: 100%;
+
+    @include md {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include sm {
+      grid-template-columns: repeat(1, 1fr);
+    }
 
     .image {
       width: auto;

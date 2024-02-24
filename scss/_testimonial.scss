@@ -1,17 +1,16 @@
 .testimonial {
-  padding: $section-padding;
   background-color: #f9f9ff;
 
   .swiper {
     width: 100%;
     height: 100%;
-    margin-top: 6cqh;
+    margin-top: 6em;
   }
 }
 
 .swiper-slide {
   //   border: 1px solid black;
-  padding: 0px 0px;
+  padding: 40px 0px;
 
   .mainContainer {
     border-radius: 12px;

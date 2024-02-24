@@ -5,26 +5,47 @@
 }
 
 .bioData {
-  padding: $section-padding;
   background: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  gap: 14px;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: start;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+
+  @include lg {
+    grid-template-columns: 1fr;
+  }
 
   .left {
-    width: 45%;
+    width: 100%;
     height: auto;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 12px;
+
+    @include lg {
+      order: 2;
+    }
 
     .image {
       width: 100%;
-      height: auto;
       position: relative;
       display: flex;
       justify-content: flex-start;
 
+      @include lg {
+        width: 80%;
+        margin: 0px auto;
+      }
+
+      @include md {
+        width: 90%;
+      }
+
       img {
-        height: auto;
         width: 90%;
         z-index: 2;
         margin-left: 40px;
@@ -43,9 +64,16 @@
   }
 
   .right {
-    width: 45%;
+    width: 100%;
     height: 100%;
-    margin-top: -30px;
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include lg {
+      order: 1;
+    }
 
     .bioInfo {
       color: $secondary-color;

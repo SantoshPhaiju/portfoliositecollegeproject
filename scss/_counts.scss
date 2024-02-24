@@ -1,5 +1,4 @@
 .section-work-data {
-  padding: $section-padding;
   background: $bg-gradient;
 
   .numbers {
@@ -9,6 +8,11 @@
     gap: 18px;
     color: white;
 
+    @include md {
+      gap: 12px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     .numberDiv {
       text-align: center;
       padding: 40px 0px;
@@ -17,11 +21,18 @@
         font-weight: 400;
         font-size: 28px;
         line-height: 0px;
+
+        @include md {
+          font-size: 24px;
+        }
       }
 
       p {
         font-size: 20px;
         font-weight: 400;
+        @include md {
+          font-size: 18px;
+        }
       }
     }
   }

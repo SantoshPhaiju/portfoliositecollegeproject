@@ -1,6 +1,4 @@
 .section-services {
-  padding: $section-padding;
-
   .service-container {
     .services-text {
       p {
@@ -8,6 +6,10 @@
         width: 55%;
         font-size: 16px;
         margin-top: 50px;
+
+        @include md {
+          width: 90%;
+        }
       }
     }
 
@@ -15,6 +17,14 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
+
+      @include md {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include sm {
+        grid-template-columns: repeat(1, 1fr);
+      }
 
       .service-item {
         display: flex;
@@ -25,6 +35,10 @@
         padding: 40px 12px;
         box-shadow: 2px 4px 8px 0px rgba(67, 5, 90, 0.3);
         border-radius: 8px;
+
+        @include md {
+          padding: 20px 12px;
+        }
 
         img {
           height: 45px;
@@ -37,6 +51,9 @@
           font-size: 20px;
           font-weight: 500;
           line-height: 0px;
+          @include sm {
+            font-size: 18px;
+          }
         }
 
         p {
@@ -44,6 +61,10 @@
           text-align: center;
           font-size: 16px;
           color: $secondary-color;
+
+          @include sm {
+            font-size: 14px;
+          }
         }
       }
     }
