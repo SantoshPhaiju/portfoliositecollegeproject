@@ -12,8 +12,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
   <body>
@@ -41,6 +53,227 @@
           <li><a href="./contactus.html">contact</a></li>
         </ul>
       </nav>
+
+      <div id="hamburger" class="hamburgerMenu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div id="closeIcon">
+        <div id="div1"></div>
+        <div id="div2"></div>
+      </div>
+
+      <div id="mobileMenu" class="mobileMenu">
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about.html"> About </a>
+          </li>
+          <li>
+            <a href="./services.html">Services</a>
+          </li>
+          <li>
+            <a href="./portfolio.html"> Portfolio </a>
+          </li>
+          <li>
+            <a href="./contactus.html"> Contact us </a>
+          </li>
+        </ul>
+      </div>
     </header>
+
+    <!-- =============== BIO DATA SECTION STARTS HERE =============== -->
+    <section class="bioData section">
+      <div class="left">
+        <div class="image">
+          <img src="./images/bioimg.jpg" alt="mybioimagehere..." />
+          <div></div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h1 class="commonHeading">My Bio-Data</h1>
+
+        <div class="bioInfo">
+          Hi, I'm Santosh Phaiju, a Full Stack Developer with three years of
+          experience in web development, and I'm only 18 years old! From
+          front-end to back-end, I've immersed myself in the world of web
+          development, crafting seamless digital experiences that leave a
+          lasting impression.
+          <br />
+          <br />
+          My passion for innovation drives me to stay ahead of the curve, always
+          exploring new technologies and trends to deliver cutting-edge
+          solutions. Take a look at my portfolio to see the projects I've
+          brought to life!
+        </div>
+
+        <div class="bio-data-skills">
+          <div class="bio-skill">
+            <h3>Design</h3>
+            <div class="bio-progress-bar bio-progress-bar-1">
+              <span> 35% </span>
+            </div>
+          </div>
+          <div class="bio-skill">
+            <h3>HTML</h3>
+            <div class="bio-progress-bar bio-progress-bar-2">
+              <span> 90% </span>
+            </div>
+          </div>
+          <div class="bio-skill">
+            <h3>CSS</h3>
+            <div class="bio-progress-bar bio-progress-bar-3">
+              <span> 85% </span>
+            </div>
+          </div>
+          <div class="bio-skill">
+            <h3>JavaScript</h3>
+            <div class="bio-progress-bar bio-progress-bar-4">
+              <span> 70% </span>
+            </div>
+          </div>
+          <div class="bio-skill">
+            <h3>MERN</h3>
+            <div class="bio-progress-bar bio-progress-bar-5">
+              <span> 78% </span>
+            </div>
+          </div>
+        </div>
+
+        <button class="downloadCv">DOWNLOAD CV</button>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION HERE -->
+    <footer class="footer section">
+      <div class="container grid grid-four-column">
+        <div class="f-about">
+          <h3>About</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Necessitatibus nam accusantium
+          </p>
+        </div>
+        <!-- {/* end */} -->
+        <div class="f-links">
+          <h3>Links</h3>
+          <ul>
+            <li>
+              <a href="/">home</a>
+            </li>
+            <li>
+              <a href="/">home</a>
+            </li>
+            <li>
+              <a href="/">home</a>
+            </li>
+            <li>
+              <a href="/">home</a>
+            </li>
+            <li>
+              <a href="/">home</a>
+            </li>
+            <li>
+              <a href="/">home</a>
+            </li>
+          </ul>
+        </div>
+        <!-- {/* end */} -->
+
+        <div class="f-services">
+          <h3>Services</h3>
+          <ul>
+            <li>
+              <a href="/">home</a>
+            </li>
+            <li>
+              <a href="/">home</a>
+            </li>
+            <li>
+              <a href="/">home</a>
+            </li>
+            <li>
+              <a href="/">home</a>
+            </li>
+            <li>
+              <a href="/">home</a>
+            </li>
+            <li>
+              <a href="/">home</a>
+            </li>
+          </ul>
+        </div>
+        <!-- {/* end */} -->
+        <div class="f-address">
+          <h3>Have a Question?</h3>
+          <address>
+            <div>
+              <p>
+                <span>
+                  <a href="/">Kathmandu, Nepal</a>
+                </span>
+              </p>
+            </div>
+            <div>
+              <p>
+                <span>
+                  <a href="tel:+9779803045389">+977 9803045389</a>
+                </span>
+              </p>
+            </div>
+            <div>
+              <p>
+                <span>
+                  <a href="mailto:santoshphaiju@gmail.com">
+                    santoshphaiju@gmail.com
+                  </a>
+                </span>
+              </p>
+            </div>
+          </address>
+        </div>
+        <!-- {/* end */} -->
+      </div>
+
+      <div class="container">
+        <div class="f-social-icons">
+          <a
+            href="https://www.facebook.com/santoshphaiju/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img src="./images/facebook.png" alt="facebook icon" />
+          </a>
+          <a
+            href="https://www.instagram.com/santoshphaiju/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img src="./images/instagram.png" alt="instagram icon" />
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCByGWpesZxihcadhkU4sYzQ"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img src="./images/youtube.png" alt="youtube icon" />
+          </a>
+        </div>
+
+        <div class="f-rights">
+          Copyright &copy; Santosh Phaiju 2022 | All rights reserved 😘 ❤
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- LINKING JAVASCRIPT FILE HERE -->
+    <script src="./script/script.js"></script>
   </body>
 </html>

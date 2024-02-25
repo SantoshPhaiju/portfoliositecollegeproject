@@ -1,4 +1,21 @@
 /* =============== HEADER CSS CODE =============== */
+.active {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes slideIn {
+  0% {
+    left: 1000px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
 header {
   width: auto;
   padding: 12px 60px;
@@ -126,6 +143,10 @@ header {
   .hamburgerMenu {
     display: none;
 
+    @media only screen and (min-width: 961px) {
+      display: none !important;
+    }
+
     @include lg {
       // border: 1px solid black;
       display: flex;
@@ -141,20 +162,63 @@ header {
       width: 34px;
       background: black;
       border-radius: 50px;
+
+      @include sm {
+        height: 2px;
+        width: 30px;
+      }
+    }
+  }
+
+  #closeIcon {
+    // border: 1px solid black;
+    display: none;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    @media only screen and (min-width: 961px) {
+      display: none !important;
+    }
+
+    #div1 {
+      transform: rotate(45deg);
+    }
+
+    #div2 {
+      transform: rotate(-45deg);
+      translate: 0px -2.5px;
+    }
+
+    div {
+      height: 3px;
+      width: 34px;
+      background: black;
+      border-radius: 50px;
+
+      @include sm {
+        height: 2px;
+        width: 30px;
+        translate: 0px -0.8px;
+      }
     }
   }
 
   .mobileMenu {
     position: absolute;
     top: 70px;
-    left: 0px;
+    left: 2000px;
     width: 100%;
     background-color: #9176ff;
     color: white;
-    display: none;
+    transition: all 0.4s ease-in-out;
+    z-index: 10;
+    // animation: slideIn 0.5s linear;
 
-    @include lg {
-      display: block;
+    // @include lg {
+    //   display: block;
+    // }
+
+    @media only screen and (min-width: 961px) {
+      display: none !important;
     }
 
     @include md {
@@ -168,13 +232,18 @@ header {
       // border: 2px solid black;
       margin: 0px;
       padding: 24px 30px;
-      padding-bottom: 30px;
+      padding-bottom: 40px;
       font-size: 16px;
 
       li {
         list-style: none;
         border-bottom: 1px solid white;
         padding: 6px 2px;
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
       }
     }
   }

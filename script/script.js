@@ -20,3 +20,23 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+// * CODE HERE FOR THE REPONSIVE MENU
+
+const hamburger = document.getElementById("hamburger");
+const closeIcon = document.getElementById("closeIcon");
+const menuBar = document.getElementById("mobileMenu");
+
+hamburger.addEventListener("click", (e) => {
+  console.log("hamburger clicked", menuBar);
+  hamburger.style.display = "none";
+  menuBar.style.left = "0px";
+  closeIcon.style.display = "block";
+});
+
+closeIcon.addEventListener("click", (e) => {
+  console.log("I am closeicon", e.target, menuBar);
+  hamburger.style.display = "flex";
+  menuBar.style.left = "2000px";
+  closeIcon.style.display = "none";
+});

@@ -5,6 +5,7 @@ body {
   padding: 0px;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
 
 .section {
@@ -37,6 +38,22 @@ body {
 }
 
 /* =============== HEADER CSS CODE =============== */
+.active {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes slideIn {
+  0% {
+    left: 1000px;
+  }
+  100% {
+    left: 0px;
+  }
+}
 header {
   width: auto;
   padding: 12px 60px;
@@ -167,6 +184,11 @@ header nav ul li:hover a {
 header .hamburgerMenu {
   display: none;
 }
+@media only screen and (min-width: 961px) {
+  header .hamburgerMenu {
+    display: none !important;
+  }
+}
 @media (max-width: 960px) {
   header .hamburgerMenu {
     display: flex;
@@ -183,18 +205,55 @@ header .hamburgerMenu div {
   background: black;
   border-radius: 50px;
 }
+@media (max-width: 480px) {
+  header .hamburgerMenu div {
+    height: 2px;
+    width: 30px;
+  }
+}
+header #closeIcon {
+  display: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+@media only screen and (min-width: 961px) {
+  header #closeIcon {
+    display: none !important;
+  }
+}
+header #closeIcon #div1 {
+  transform: rotate(45deg);
+}
+header #closeIcon #div2 {
+  transform: rotate(-45deg);
+  translate: 0px -2.5px;
+}
+header #closeIcon div {
+  height: 3px;
+  width: 34px;
+  background: black;
+  border-radius: 50px;
+}
+@media (max-width: 480px) {
+  header #closeIcon div {
+    height: 2px;
+    width: 30px;
+    translate: 0px -0.8px;
+  }
+}
 header .mobileMenu {
   position: absolute;
   top: 70px;
-  left: 0px;
+  left: 2000px;
   width: 100%;
   background-color: #9176ff;
   color: white;
-  display: none;
+  transition: all 0.4s ease-in-out;
+  z-index: 10;
 }
-@media (max-width: 960px) {
+@media only screen and (min-width: 961px) {
   header .mobileMenu {
-    display: block;
+    display: none !important;
   }
 }
 @media (max-width: 720px) {
@@ -208,13 +267,17 @@ header .mobileMenu ul {
   gap: 12px;
   margin: 0px;
   padding: 24px 30px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   font-size: 16px;
 }
 header .mobileMenu ul li {
   list-style: none;
   border-bottom: 1px solid white;
   padding: 6px 2px;
+}
+header .mobileMenu ul li a {
+  text-decoration: none;
+  color: white;
 }
 
 .hero {
