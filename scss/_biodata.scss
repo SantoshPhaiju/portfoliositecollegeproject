@@ -196,6 +196,7 @@
     .downloadCv {
       @include btn(0px);
       margin-top: 48px;
+      width: 200px;
     }
 
     .downloadCv:hover {
