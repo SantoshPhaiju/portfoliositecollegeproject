@@ -1,5 +1,4 @@
 .section-contact-us {
-
   .map {
     width: 100%;
     margin-top: 60px;
@@ -15,6 +14,11 @@
     flex-direction: column;
     gap: 3rem;
     font-family: $secondary-font;
+
+    @include md {
+      padding: 40px 0px;
+      width: 100%;
+    }
 
     .form-two-column {
       display: grid;
@@ -44,7 +48,7 @@
     }
     button {
       @include btn(8px);
-      width: auto;
+      width: 200px;
       text-transform: uppercase;
       font: 800;
       font-family: $primary-font;

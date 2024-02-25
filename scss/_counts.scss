@@ -7,8 +7,9 @@
     justify-content: center;
     gap: 18px;
     color: white;
+    padding: 0px 20px;
 
-    @include md {
+    @include lg {
       gap: 12px;
       grid-template-columns: repeat(2, 1fr);
     }

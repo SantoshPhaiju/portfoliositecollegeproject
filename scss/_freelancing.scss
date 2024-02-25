@@ -1,11 +1,12 @@
 .section-freelancing {
   background: url("../images/bgparallaz.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-position: center;
   background-attachment: fixed;
   transition: all 0.7s linear;
   text-align: center;
   position: relative;
+  background-size: cover;
 
   .overlay {
     position: absolute;
@@ -32,8 +33,14 @@
         font-size: 32px;
       }
 
-      span {
+      p {
+        font-size: 48px;
+        display: inline-block;
         color: #a0f669;
+
+        @include lg {
+          font-size: 32px;
+        }
       }
     }
     p {

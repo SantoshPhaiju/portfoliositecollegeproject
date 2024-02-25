@@ -10,6 +10,7 @@ header {
   background: $primary-color;
   // border: 1px solid blue;
   box-sizing: border-box;
+  position: relative;
 
   @include xl {
     padding: 8px 55px;
@@ -17,6 +18,14 @@ header {
 
   @include lg {
     padding: 8px 40px;
+  }
+
+  @include md {
+    padding: 8px 28px;
+  }
+
+  @include sm {
+    padding: 6px 20px;
   }
 
   .logo {
@@ -30,9 +39,21 @@ header {
       gap: 8px;
     }
 
+    @include md {
+      gap: 4px;
+    }
+
+    @include sm {
+      gap: 2px;
+    }
+
     img {
       width: 80px;
       height: auto;
+
+      @include md {
+        width: 60px;
+      }
     }
 
     .heading {
@@ -43,6 +64,10 @@ header {
 
       @include xl {
         font-size: 26px;
+      }
+
+      @include md {
+        font-size: 22px;
       }
     }
   }
@@ -112,9 +137,45 @@ header {
     }
 
     div {
-      height: 2px;
-      width: 30px;
+      height: 3px;
+      width: 34px;
       background: black;
+      border-radius: 50px;
+    }
+  }
+
+  .mobileMenu {
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    width: 100%;
+    background-color: #9176ff;
+    color: white;
+    display: none;
+
+    @include lg {
+      display: block;
+    }
+
+    @include md {
+      top: 54px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      // border: 2px solid black;
+      margin: 0px;
+      padding: 24px 30px;
+      padding-bottom: 30px;
+      font-size: 16px;
+
+      li {
+        list-style: none;
+        border-bottom: 1px solid white;
+        padding: 6px 2px;
+      }
     }
   }
 }

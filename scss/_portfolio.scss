@@ -18,9 +18,15 @@
     align-items: center;
     gap: 18px;
     margin: 60px auto;
+    flex-wrap: wrap;
 
     @include md {
       gap: 12px;
+    }
+
+    @include sm {
+      justify-content: start;
+      gap: 18px;
     }
 
     button {

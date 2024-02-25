@@ -47,6 +47,7 @@ header {
   align-items: center;
   background: #f9f9ff;
   box-sizing: border-box;
+  position: relative;
 }
 @media (max-width: 1200px) {
   header {
@@ -56,6 +57,16 @@ header {
 @media (max-width: 960px) {
   header {
     padding: 8px 40px;
+  }
+}
+@media (max-width: 720px) {
+  header {
+    padding: 8px 28px;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    padding: 6px 20px;
   }
 }
 header .logo {
@@ -70,9 +81,24 @@ header .logo {
     gap: 8px;
   }
 }
+@media (max-width: 720px) {
+  header .logo {
+    gap: 4px;
+  }
+}
+@media (max-width: 480px) {
+  header .logo {
+    gap: 2px;
+  }
+}
 header .logo img {
   width: 80px;
   height: auto;
+}
+@media (max-width: 720px) {
+  header .logo img {
+    width: 60px;
+  }
 }
 header .logo .heading {
   color: #e8b6ff;
@@ -83,6 +109,11 @@ header .logo .heading {
 @media (max-width: 1200px) {
   header .logo .heading {
     font-size: 26px;
+  }
+}
+@media (max-width: 720px) {
+  header .logo .heading {
+    font-size: 22px;
   }
 }
 header nav {
@@ -147,9 +178,43 @@ header .hamburgerMenu {
   }
 }
 header .hamburgerMenu div {
-  height: 2px;
-  width: 30px;
+  height: 3px;
+  width: 34px;
   background: black;
+  border-radius: 50px;
+}
+header .mobileMenu {
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  width: 100%;
+  background-color: #9176ff;
+  color: white;
+  display: none;
+}
+@media (max-width: 960px) {
+  header .mobileMenu {
+    display: block;
+  }
+}
+@media (max-width: 720px) {
+  header .mobileMenu {
+    top: 54px;
+  }
+}
+header .mobileMenu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0px;
+  padding: 24px 30px;
+  padding-bottom: 30px;
+  font-size: 16px;
+}
+header .mobileMenu ul li {
+  list-style: none;
+  border-bottom: 1px solid white;
+  padding: 6px 2px;
 }
 
 .hero {
@@ -420,6 +485,7 @@ header .hamburgerMenu div {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   margin-top: 48px;
+  width: 200px;
 }
 @media (max-width: 720px) {
   .bioData .right .downloadCv {
@@ -492,10 +558,17 @@ header .hamburgerMenu div {
   align-items: center;
   gap: 18px;
   margin: 60px auto;
+  flex-wrap: wrap;
 }
 @media (max-width: 720px) {
   .portfolio .buttons {
     gap: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .portfolio .buttons {
+    justify-content: start;
+    gap: 18px;
   }
 }
 .portfolio .buttons button {
@@ -554,8 +627,9 @@ header .hamburgerMenu div {
   justify-content: center;
   gap: 18px;
   color: white;
+  padding: 0px 20px;
 }
-@media (max-width: 720px) {
+@media (max-width: 960px) {
   .section-work-data .numbers {
     gap: 12px;
     grid-template-columns: repeat(2, 1fr);
@@ -601,12 +675,12 @@ header .hamburgerMenu div {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-@media (max-width: 720px) {
+@media (max-width: 960px) {
   .section-services .service-container .servicesDiv {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 720px) {
   .section-services .service-container .servicesDiv {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -660,7 +734,7 @@ header .hamburgerMenu div {
 .testimonial .swiper {
   width: 100%;
   height: 100%;
-  margin-top: 6em;
+  margin-top: 4em;
 }
 
 .swiper-slide {
@@ -674,6 +748,11 @@ header .hamburgerMenu div {
   position: relative;
   margin: 0px 18px;
 }
+@media (max-width: 720px) {
+  .swiper-slide .mainContainer {
+    padding: 40px 50px;
+  }
+}
 .swiper-slide .mainContainer img {
   height: 50px;
   width: 50px;
@@ -683,14 +762,33 @@ header .hamburgerMenu div {
   top: 10px;
   left: 1rem;
 }
+@media (max-width: 720px) {
+  .swiper-slide .mainContainer #img1 {
+    top: 1px;
+    left: 0.8rem;
+  }
+}
 .swiper-slide .mainContainer #img2 {
   position: absolute;
   bottom: 10px;
   right: 1.4rem;
   transform: rotate(180deg);
 }
+@media (max-width: 720px) {
+  .swiper-slide .mainContainer #img2 {
+    bottom: 8px;
+    right: 1rem;
+  }
+}
 .swiper-slide .mainContainer p {
   color: #777777;
+  font-size: 16px;
+}
+@media (max-width: 720px) {
+  .swiper-slide .mainContainer p {
+    font-size: 14px;
+    text-align: left;
+  }
 }
 .swiper-slide .mainContainer::before {
   content: "";
@@ -745,11 +843,12 @@ header .hamburgerMenu div {
 .section-freelancing {
   background: url("../images/bgparallaz.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-position: center;
   background-attachment: fixed;
   transition: all 0.7s linear;
   text-align: center;
   position: relative;
+  background-size: cover;
 }
 .section-freelancing .overlay {
   position: absolute;
@@ -776,8 +875,15 @@ header .hamburgerMenu div {
     font-size: 32px;
   }
 }
-.section-freelancing .container h2 span {
+.section-freelancing .container h2 p {
+  font-size: 48px;
+  display: inline-block;
   color: #a0f669;
+}
+@media (max-width: 960px) {
+  .section-freelancing .container h2 p {
+    font-size: 32px;
+  }
 }
 .section-freelancing .container p {
   margin-bottom: 50px;
@@ -826,6 +932,12 @@ header .hamburgerMenu div {
   gap: 3rem;
   font-family: "Inria Sans", sans-serif;
 }
+@media (max-width: 720px) {
+  .section-contact-us form {
+    padding: 40px 0px;
+    width: 100%;
+  }
+}
 .section-contact-us form .form-two-column {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -860,7 +972,7 @@ header .hamburgerMenu div {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-  width: auto;
+  width: 200px;
   text-transform: uppercase;
   font: 800;
   font-family: "Inter", sans-serif;
@@ -881,6 +993,16 @@ header .hamburgerMenu div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
+}
+@media (max-width: 960px) {
+  .footer .grid-four-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .footer .grid-four-column {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .footer .grid-four-column .f-about p {
   color: #959595;
@@ -923,11 +1045,12 @@ header .hamburgerMenu div {
 .footer .f-rights {
   margin: 0px auto;
   margin-top: 20px;
-  margin-bottom: -20px;
+  margin-bottom: 0px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .footer .container .f-social-icons {
   margin-top: 30px;
@@ -936,6 +1059,11 @@ header .hamburgerMenu div {
   justify-content: center;
   align-items: center;
   gap: 32px;
+}
+@media (max-width: 480px) {
+  .footer .container .f-social-icons {
+    gap: 24px;
+  }
 }
 .footer .container .f-social-icons a img {
   width: 40px;
