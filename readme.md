@@ -69,3 +69,7 @@ A brief description of what this project is it is specially made for the college
 
 * Made website responsive upto 50%.
 
+# Day 13: 
+* Completed responsiveness and all the pages.
+* Project completed.
+
