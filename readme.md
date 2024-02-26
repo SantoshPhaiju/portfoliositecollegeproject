@@ -9,6 +9,8 @@ A brief description of what this project is it is specially made for the college
 * CSS
 * JAVASCRIPT
 
+# Live Link:- [Portfoliocollegeproject](https://portfoliositecollegeproject.vercel.app/)
+
 # Screenshots
 ![Screenshot 2024-02-14 at 19 17 38](https://github.com/SantoshPhaiju/portfoliositecollegeproject/assets/92672422/c7a619e4-5cdc-436d-b5f9-fa99d69837a6)
 ![Screenshot 2024-02-14 at 19 19 00](https://github.com/SantoshPhaiju/portfoliositecollegeproject/assets/92672422/6c91bdfb-534e-4124-bf15-68ed6d7d6662)
@@ -73,3 +75,6 @@ A brief description of what this project is it is specially made for the college
 * Completed responsiveness and all the pages.
 * Project completed.
 
+# Day 14:
+* Project Deployed to vercel.
+* Live Link:- [Portfoliocollegeproject](https://portfoliositecollegeproject.vercel.app/)
