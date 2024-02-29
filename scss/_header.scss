@@ -108,7 +108,7 @@ header {
 
       li {
         list-style: none;
-        border: 1px solid rgb(5, 30, 81);
+        // border: 1px solid rgb(5, 30, 81);
         padding: 10px 20px;
         border-radius: 8px;
         transition: all 0.3s ease-in-out;
@@ -128,8 +128,7 @@ header {
 
       li:hover {
         background-color: #e8b6ff;
-        border: 1px solid #e8b6ff;
-        scale: 110%;
+        // scale: 110%;
         box-shadow: 0px 6px 10px 0px rgba(123, 178, 255, 0.543);
         border-radius: 4px;
 
