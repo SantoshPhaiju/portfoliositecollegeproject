@@ -145,7 +145,7 @@ header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 32px;
+  gap: 24px;
 }
 @media (max-width: 1200px) {
   header nav ul {
@@ -154,7 +154,6 @@ header nav ul {
 }
 header nav ul li {
   list-style: none;
-  border: 1px solid rgb(5, 30, 81);
   padding: 10px 20px;
   border-radius: 8px;
   transition: all 0.3s ease-in-out;
@@ -173,8 +172,6 @@ header nav ul li a {
 }
 header nav ul li:hover {
   background-color: #e8b6ff;
-  border: 1px solid #e8b6ff;
-  scale: 110%;
   box-shadow: 0px 6px 10px 0px rgba(123, 178, 255, 0.543);
   border-radius: 4px;
 }
@@ -981,14 +978,22 @@ header .mobileMenu ul li a {
   }
 }
 
-.section-contact-us .map {
-  width: 100%;
-  margin-top: 60px;
+.section-contact-us .sectionContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
-.section-contact-us form {
-  margin-top: 20px;
-  padding: 40px 80px;
-  width: 70%;
+@media (max-width: 1200px) {
+  .section-contact-us .sectionContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.section-contact-us .sectionContainer .map {
+  width: 100%;
+}
+.section-contact-us .sectionContainer form {
+  padding: 0px 0px;
+  width: 100%;
   margin: 0px auto;
   display: flex;
   flex-direction: column;
@@ -996,22 +1001,22 @@ header .mobileMenu ul li a {
   font-family: "Inria Sans", sans-serif;
 }
 @media (max-width: 720px) {
-  .section-contact-us form {
-    padding: 40px 0px;
+  .section-contact-us .sectionContainer form {
+    padding: 0px 0px;
     width: 100%;
   }
 }
-.section-contact-us form .form-two-column {
+.section-contact-us .sectionContainer form .form-two-column {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 18px;
 }
-.section-contact-us form .formGroup {
+.section-contact-us .sectionContainer form .formGroup {
   width: 100%;
   display: flex;
 }
-.section-contact-us form .formGroup input,
-.section-contact-us form .formGroup textarea {
+.section-contact-us .sectionContainer form .formGroup input,
+.section-contact-us .sectionContainer form .formGroup textarea {
   padding: 0.8rem 2rem;
   border: 0.1rem solid #d9d9d9;
   border-radius: 5px;
@@ -1019,11 +1024,11 @@ header .mobileMenu ul li a {
   width: 100%;
   color: #01186e;
 }
-.section-contact-us form .formGroup input:focus,
-.section-contact-us form .formGroup textarea:focus {
+.section-contact-us .sectionContainer form .formGroup input:focus,
+.section-contact-us .sectionContainer form .formGroup textarea:focus {
   outline: 0.1rem solid #760dff;
 }
-.section-contact-us form button {
+.section-contact-us .sectionContainer form button {
   background: linear-gradient(to left, #c5bcff, #bd7cff);
   padding: 12px 32px;
   border: none;
@@ -1042,7 +1047,7 @@ header .mobileMenu ul li a {
   font-size: 20px;
 }
 @media (max-width: 720px) {
-  .section-contact-us form button {
+  .section-contact-us .sectionContainer form button {
     padding: 10px 26px;
     font-size: 14px;
   }
